@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Erciyes Dağı",
+      "description": "Erciyes Dağı, Kayseri'nin en yüksek dağıdır.",
+      "imageUrl": "assets/erciyes.PNG"
+    },
+    {
+      "name": "Kapuzbaşı Şelaleleri",
+      "description": "Kapuzbaşı Şelaleleri, Türkiye'nin en yüksek şelalelerindendir.",
+      "imageUrl": "assets/kbş.jpeg"
+    },
+    {
+      "name": "Yeşilhisar",
+      "description": "Yeşilhisar, Kayseri'nin tarihi ilçelerinden biridir.",
+      "imageUrl": "assets/ys.PNG"
+    },
+    {
+      "name": "Sultan Sazlığı",
+      "description": "Sultan Sazlığı, Kayseri'deki önemli doğal alanlardan biridir.",
+      "imageUrl": "assets/ss.PNG"
+    },
+    {
+      "name": "Cumhuriyet Meydanı",
+      "description": "Cumhuriyet Meydanı, Kayseri'nin merkezi meydanlarından biridir.",
+      "imageUrl": "assets/cm.PNG"
+    },
+    {
+      "name": "Kültepe",
+      "description": "Kültepe, Kayseri'nin tarihi ve arkeolojik öneme sahip bir bölgesidir.",
+      "imageUrl": "assets/ktp.PNG"
+    }
+  ]
+  
