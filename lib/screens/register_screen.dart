@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:kayseri_gezi_rehberi/screens/home_screen.dart';
-import 'package:kayseri_gezi_rehberi/screens/register_screen.dart'; // RegisterScreen dosyasını import etmeyi unutmayın
 
-class LoginScreen extends StatelessWidget {
+class RegisterScreen extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
+  final TextEditingController confirmPasswordController =
+      TextEditingController();
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -26,7 +27,7 @@ class LoginScreen extends StatelessWidget {
             // Ekranın en üstüne başlık
             Center(
               child: Text(
-                'Giriş Yap',
+                'Üye Ol',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -98,20 +99,41 @@ class LoginScreen extends StatelessWidget {
                     },
                   ),
                   SizedBox(height: 16),
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: Text(
-                      'Şifremi Unuttum',
-                      style: TextStyle(
-                        color: Colors.blue,
+                  TextFormField(
+                    controller: confirmPasswordController,
+                    decoration: InputDecoration(
+                      labelText: 'Şifreyi Onayla',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20.0),
                       ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20.0),
+                        borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20.0),
+                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                      ),
+                      filled: true,
+                      fillColor: Colors.grey[200],
+                      suffixIcon: Icon(Icons.visibility_off),
                     ),
+                    obscureText: true,
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'Şifreyi onaylama alanı boş bırakılamaz';
+                      }
+                      if (value != passwordController.text) {
+                        return 'Şifreler uyuşmuyor';
+                      }
+                      return null;
+                    },
                   ),
                   SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        // Giriş işlemleri burada yapılacak
+                        // Kayıt işlemleri burada yapılacak
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(builder: (context) => HomeScreen()),
@@ -128,19 +150,15 @@ class LoginScreen extends StatelessWidget {
                       ),
                       textStyle: TextStyle(fontSize: 16),
                     ),
-                    child: Text('Giriş Yap'),
+                    child: Text('Üye Ol'),
                   ),
                   SizedBox(height: 20),
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => RegisterScreen()),
-                      );
+                      Navigator.pop(context);
                     },
                     child: Text(
-                      'Hesabın Yok mu?',
+                      'Hesabın var mı? Giriş Yap',
                       style: TextStyle(
                         color: Colors.black54,
                         fontWeight: FontWeight.w500,
