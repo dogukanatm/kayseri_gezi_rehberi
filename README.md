@@ -64,10 +64,6 @@ Katkıda bulunmak isterseniz, lütfen önce bir konu açarak ne üzerinde çalı
 4. Branşınıza push edin (`git push origin feature/HarikaYeniÖzellik`).
 5. Bir pull request açın.
 
-## Lisans
-
-Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
-
 ## İletişim
 
 Herhangi bir sorunuz varsa veya yardım etmek isterseniz, lütfen [dogukanatm](https://github.com/dogukanatm) ile iletişime geçin.
