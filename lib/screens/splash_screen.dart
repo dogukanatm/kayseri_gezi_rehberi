@@ -20,7 +20,7 @@ class SplashScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 60.0),
                 child: Text(
-                  'Hoşgeldiniz',
+                  'KAYSERİYİ KEŞFEDİN',
                   style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.bold,

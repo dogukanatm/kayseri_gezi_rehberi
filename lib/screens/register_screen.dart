@@ -15,7 +15,7 @@ class RegisterScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
@@ -25,7 +25,7 @@ class RegisterScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // Ekranın en üstüne başlık
-            Center(
+            const Center(
               child: Text(
                 'Üye Ol',
                 style: TextStyle(
@@ -34,7 +34,7 @@ class RegisterScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Form(
               key: _formKey,
               child: Column(
@@ -48,11 +48,13 @@ class RegisterScreen extends StatelessWidget {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.0),
-                        borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                        borderSide:
+                            const BorderSide(color: Colors.blue, width: 2.0),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.0),
-                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                        borderSide:
+                            const BorderSide(color: Colors.grey, width: 1.0),
                       ),
                       filled: true,
                       fillColor: Colors.grey[200],
@@ -67,7 +69,7 @@ class RegisterScreen extends StatelessWidget {
                       return null;
                     },
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   TextFormField(
                     controller: passwordController,
                     decoration: InputDecoration(
@@ -77,15 +79,17 @@ class RegisterScreen extends StatelessWidget {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.0),
-                        borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                        borderSide:
+                            const BorderSide(color: Colors.blue, width: 2.0),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.0),
-                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                        borderSide:
+                            const BorderSide(color: Colors.grey, width: 1.0),
                       ),
                       filled: true,
                       fillColor: Colors.grey[200],
-                      suffixIcon: Icon(Icons.visibility_off),
+                      suffixIcon: const Icon(Icons.visibility_off),
                     ),
                     obscureText: true,
                     validator: (value) {
@@ -98,7 +102,7 @@ class RegisterScreen extends StatelessWidget {
                       return null;
                     },
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   TextFormField(
                     controller: confirmPasswordController,
                     decoration: InputDecoration(
@@ -108,15 +112,17 @@ class RegisterScreen extends StatelessWidget {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.0),
-                        borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                        borderSide:
+                            const BorderSide(color: Colors.blue, width: 2.0),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.0),
-                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                        borderSide:
+                            const BorderSide(color: Colors.grey, width: 1.0),
                       ),
                       filled: true,
                       fillColor: Colors.grey[200],
-                      suffixIcon: Icon(Icons.visibility_off),
+                      suffixIcon: const Icon(Icons.visibility_off),
                     ),
                     obscureText: true,
                     validator: (value) {
@@ -129,7 +135,7 @@ class RegisterScreen extends StatelessWidget {
                       return null;
                     },
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
@@ -143,23 +149,23 @@ class RegisterScreen extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       primary: Colors.blue, // Buton arkaplan rengi
                       onPrimary: Colors.white, // Buton yazı rengi
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 15),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0),
                       ),
-                      textStyle: TextStyle(fontSize: 16),
+                      textStyle: const TextStyle(fontSize: 16),
                     ),
-                    child: Text('Üye Ol'),
+                    child: const Text('Üye Ol'),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   GestureDetector(
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Text(
+                    child: const Text(
                       'Hesabın var mı? Giriş Yap',
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.black54,
                         fontWeight: FontWeight.w500,
                       ),
