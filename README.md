@@ -8,6 +8,19 @@ Kayseri Gezi Rehberi, Kayseri'deki gezilecek yerler hakkında bilgi sağlayan ve
 - **Gezilecek yerler:** Kayseri'deki önemli turistik yerlerin listesi ve detaylı bilgileri.
 - **Keşfetme:** Kullanıcıların rastgele yerleri keşfetmesini sağlayan özellik.
 
+<p align='center'> 
+    <p align='center'>
+        <a href="https://github.com/dogukanatm/kayseri_gezi_rehberi.git" align='center'>
+        </a>
+    </p>
+    <p align="center">                
+        Erciyes University Graduation Thesis
+        <br/>    
+        <a href="https://drive.google.com/file/d/1-VMoix7xlHOrYCBRV6eVDqKY4W6Qbh_S/view?usp=sharing"> View Report <a>
+    </p>
+
+##
+
 ## Ekran Görüntüleri
 
 **Giriş Ekranı**
